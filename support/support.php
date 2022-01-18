@@ -1,15 +1,19 @@
 <?php
 	
 
-	require("./login.html");
+	require './webpage.class.php';
 
-// need to check for user login, redirect to login if applicable
+
 	// Initialize DB connection variables
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
 	$dbname = "taskless";
 
+
+		$webpage = new webpage();
+
+/*
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
 
