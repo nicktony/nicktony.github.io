@@ -2,9 +2,28 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="login.css">
 	</head>
+	<header>
+		<h1>TASK<span>LESS</span></h1>
+	</header>
 	<body>
-		<h2>Setting the Viewport</h2>
-		<p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
+		<form action="login.php" method="post">
+		  <div class="container">
+		    <b>Username</b>
+		    <br>
+		    <input type="text" placeholder="Enter Username" name="username" required>
+		    <br>
+		    <b>Password</b>
+		    <br>
+		    <input type="password" placeholder="Enter Password" name="password" required>
+
+		    <button type="submit">Login</button>
+		  </div>
+
+		  <div class="container" style="background-color:#f1f1f1">
+		    <button type='button' class='newaccbtn'><a style='text-decoration: none' href='../user_newacc/new_user.php'><font color='white'>Create New Account</font></a></button>
+		  </div>
+		</form>
 	</body>
 </html>

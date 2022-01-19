@@ -4,7 +4,7 @@
 session_start();
 if (isset($_SESSION['username'])) {
 	$temp = $_SESSION['username'];
-  //echo "<div style='margin-left: 5rem; padding: 1rem'>Session is active with $temp</div>";
+  	//echo "<div style='margin-left: 5rem; padding: 1rem'>Session is active with $temp</div>";
 } else {
 	header("Location: ../user_login/login.php");
 }
@@ -16,7 +16,7 @@ require '../classes/webpage.class.php';
 $webpage = new webpage();
 
 // Assign title
-$webpage->createPage('Support');
+$webpage->createPage('Profile');
 
 // Assign body contents
 $html = 'test'
@@ -45,7 +45,7 @@ $html = 'test'
 
 
 // Input additional css
-$webpage->inputCSS('./support.css');
+$webpage->inputCSS('./profile.css');
 
 // Input html body contents in template
 $webpage->inputHTML($html);
