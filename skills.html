@@ -41,10 +41,9 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="skills.html">Skills</a></li>
-							<li><a href="experience.html">Work Experience</a></li>
+							<li><a href="work_experience.html">Work Experience</a></li>
+							<li><a href="project_experience.html">Project Experience</a></li>
 							<li><a href="education.html">Education</a></li>
-							<li><a href="project1.html">Happiness Project</a></li>
-							<li><a href="project2.html">Facial Recognition Project</a></li>
 							<li><a href="aboutme.html">About Me</a></li>
 						</ul>
 					</nav>
@@ -108,66 +107,203 @@
 							
 						<!-- Lists -->
 							<section>
+								<h3>Search All Skills</h3>
+								<input type="text" id="searchInput" onkeyup="search()" placeholder="Search for items..">
+
+								<div class="col-6 col-12-medium" style="max-height: 400px; overflow-y: auto;">
+								    <ul id="list" class="alt">
+								        <li>Algorithms</li>
+									    <li>Anaconda</li>
+									    <li>Amazon Web Services (AWS)</li>
+									    <li>AWS EC2</li>
+									    <li>AWS S3</li>
+									    <li>Bayesian Statistics</li>
+									    <li>Big Data</li>
+									    <li>Bootstrap</li>
+									    <li>Celonis</li>
+									    <li>C#</li>
+									    <li>C++</li>
+									    <li>CSS</li>
+									    <li>CSS2</li>
+									    <li>CSS3</li>
+									    <li>Classification Algorithms</li>
+									    <li>Cloud Computing</li>
+									    <li>Computer Vision</li>
+									    <li>Convolutional Neural Networks (CNNs)</li>
+									    <li>Data Analysis</li>
+									    <li>Data Cleaning</li>
+									    <li>Data Engineering</li>
+									    <li>Data Exploration</li>
+									    <li>Data Mining</li>
+									    <li>Data Modeling</li>
+									    <li>Data Preprocessing</li>
+									    <li>Data Science</li>
+									    <li>Data Visualization</li>
+									    <li>Data Warehousing</li>
+									    <li>Deep Learning</li>
+									    <li>Docker</li>
+									    <li>Elasticsearch</li>
+									    <li>Excel</li>
+									    <li>Feature Engineering</li>
+									    <li>Google Cloud Platform (GCP)</li>
+									    <li>GCP BigQuery</li>
+									    <li>GCP Vertex AI</li>
+									    <li>Git</li>
+									    <li>GitHub</li>
+									    <li>Google Analytics</li>
+									    <li>Hadoop</li>
+									    <li>HTML</li>
+									    <li>Image Processing</li>
+									    <li>Java</li>
+									    <li>JavaScript</li>
+									    <li>Jupyter Notebooks</li>
+									    <li>Kubernetes</li>
+									    <li>Linear Algebra</li>
+									    <li>Linux</li>
+									    <li>Machine Learning</li>
+									    <li>Markov Chain</li>
+									    <li>Markov Chain Monte Carlo (MCMC)</li>
+									    <li>Matplotlib</li>
+									    <li>Microsoft Azure</li>
+									    <li>Microsoft Excel</li>
+									    <li>Microsoft SQL Server</li>
+									    <li>MongoDB</li>
+									    <li>Monte Carlo Method</li>
+									    <li>MySQL</li>
+									    <li>Natural Language Processing (NLP)</li>
+									    <li>Neural Networks</li>
+									    <li>NumPy</li>
+									    <li>OpenCV</li>
+									    <li>Pandas</li>
+									    <li>PHP</li>
+									    <li>PyTorch</li>
+									    <li>Python</li>
+									    <li>R</li>
+									    <li>Regression Analysis</li>
+									    <li>RESTful APIs</li>
+									    <li>Scikit-learn</li>
+									    <li>Shell Scripting</li>
+									    <li>Snowflake</li>
+									    <li>Spark</li>
+									    <li>Springboot</li>
+									    <li>SQL</li>
+									    <li>Supervised Learning</li>
+									    <li>TensorFlow</li>
+									    <li>Time Series Analysis</li>
+									    <li>Unix</li>
+									    <li>Unsupervised Learning</li>
+									    <li>VB.NET</li>
+									    <li>Web Scraping</li>
+									    <li>Woodworking</li>
+									    <li>YAML</li>
+									    <li>Zendesk</li>
+								    </ul>
+
+									<script>
+									function search() {
+									    var input, filter, ul, li, a, i, txtValue;
+									    input = document.getElementById('searchInput');
+									    filter = input.value.toUpperCase();
+									    ul = document.getElementById("list");
+									    li = ul.getElementsByTagName('li');
+
+									    for (i = 0; i < li.length; i++) {
+									        txtValue = li[i].textContent || li[i].innerText;
+									        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+									            li[i].style.display = "";
+									        } else {
+									            li[i].style.display = "none";
+									        }
+									    }
+									}
+									</script>
+								</div>
+								<br>
+
 								<div class="row">
 									<div class="col-6 col-12-medium">
 										<h3>Data Science Concepts</h3>
 										<ul class="alt">
-											<li>Process Mining</li>
-											<li>Data Mining</li>
-											<li>Machine Learning</li>
-											<li>Exploratory Data Analysis</li>
-											<li>Deep Learning</li>
-											<li>Pattern Recognition</li>
-											<li>Computer Vision</li>
-											<li>Hyperparameter Tuning</li>
-											<li>Artificial Intelligence Systems</li>
-											<li>Neural Networks</li>
-											<li>Supervised Learning</li>
-											<li>Unsupervised Learning</li>
-											<li>Data Structures</li>
+										    <li>Generative Artificial Intelligence Systems</li>
+										    <li>Computer Vision</li>
+										    <li>Data Mining</li>
+										    <li>Data Structures</li>
+										    <li>Deep Learning</li>
+										    <li>Exploratory Data Analysis</li>
+										    <li>Hyperparameter Tuning</li>
+										    <li>Machine Learning</li>
+										    <li>Neural Networks</li>
+										    <li>Pattern Recognition</li>
+										    <li>Process Mining</li>
+										    <li>Supervised Learning</li>
+										    <li>Unsupervised Learning</li>
 										</ul>
-										<h3>Tools</h3>
+										<h3>R Library's</h3>
 										<ul class="alt">
-											<li>GitHub</li>
-											<li>AWS</li>
-											<li>Celonis</li>
-											<li>UiPath</li>
-											<li>.NET Framework</li>
-											<li>.NET Core</li>
-											<li>WinSCP</li>
-											<li>FileZilla</li>
+										    <li>caret</li>
+										    <li>cvms</li>
+										    <li>dplyr</li>
+										    <li>e1071</li>
+										    <li>ggplot2</li>
+										    <li>Hmisc</li>
+										    <li>ISLR</li>
+										    <li>ISLR2</li>
+										    <li>magrittr</li>
+										    <li>MASS</li>
+										    <li>rethinking</li>
+										    <li>reshape</li>
+										    <li>reshape2</li>
+										    <li>sqldf</li>
+										    <li>stringr</li>
+										    <li>tibble</li>
+										    <li>tidyr</li>
+										    <li>tree</li>
 										</ul>
 									</div>
 									<div class="col-6 col-12-medium">
 										<h3>Python Library's</h3>
 										<ul class="alt">
-											<li>NumPy</li>
-											<li>Sci-Kit Learn</li>
-											<li>Pandas</li>
-											<li>SciPy</li>
-											<li>Matplotlib</li>
-											<li>Seaborn</li>
-											<li>NLTK</li>
+										    <li>CatBoost</li>
+										    <li>Keras</li>
+										    <li>LightGBM</li>
+										    <li>Matplotlib</li>
+										    <li>NLTK</li>
+										    <li>NumPy</li>
+										    <li>PIL</li>
+										    <li>Pandas</li>
+										    <li>Plotly</li>
+										    <li>PyTorch</li>
+										    <li>SciPy</li>
+										    <li>Scikit-Learn</li>
+										    <li>Seaborn</li>
+										    <li>TensorFlow</li>
+										    <li>XGBoost</li>
+										    <li>catboost</li>
+										    <li>cv2</li>
+										    <li>datetime</li>
+										    <li>hyperopt</li>
+										    <li>imblearn</li>
+										    <li>itertools</li>
+										    <li>keras_tuner</li>
+										    <li>lightgbm</li>
+										    <li>numpy</li>
+										    <li>os</li>
+										    <li>plotly</li>
+										    <li>random</li>
+										    <li>rpca</li>
+										    <li>shap</li>
+										    <li>tensorflow</li>
 										</ul>
-										<h3>R Library's</h3>
+										<h3>Developer Tools</h3>
 										<ul class="alt">
-											<li>ggplot2</li>
-											<li>sqldf</li>
-											<li>magrittr</li>
-											<li>dplyr</li>
-											<li>ISLR2</li>
-											<li>tidyr</li>
-											<li>caret</li>
-											<li>Hmisc</li>
-											<li>cvms</li>
-											<li>tibble</li>
-											<li>MASS</li>
-											<li>reshape</li>
-											<li>reshape2</li>
-											<li>e1071</li>
-											<li>ISLR</li>
-											<li>stringr</li>
-											<li>tree</li>
+											<li>.NET Core</li>
+										    <li>.NET Framework</li>
+										    <li>AWS</li>
+										    <li>Celonis</li>
+										    <li>FileZilla</li>
+										    <li>GitHub</li>
+										    <li>UiPath</li>
+										    <li>WinSCP</li>
 										</ul>
 									</div>
 								</div>
