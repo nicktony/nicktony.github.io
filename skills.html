@@ -52,8 +52,321 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Skills</h1>
+							
+						<!-- Text -->
+							<section>
+								<pre><code>Hello, World! I bring a wealth of experience across various technical and business domains, as outlined below.</code></pre>
+							</section>
+							
+						<!-- Lists -->
+							<section>
+								<h3>Search All Skills</h3>
+								<input type="text" id="searchInput" onkeyup="search()" placeholder="Click Here to Search for Skills...">
 
-						<!-- Progress Bars -->
+								<div class="col-12 col-12-medium" style="max-height: 200px; overflow-y: auto;">
+								    <ul id="list" class="alt">
+								        <li>Accounts Payable (AP) Process Mining</li>
+										<li>Accounts Receivable (AR) Process Mining</li>
+										<li>Algorithms</li>
+										<li>Anaconda</li>
+										<li>Amazon Web Services (AWS)</li>
+										<li>AWS Cloud Architecture</li>
+										<li>AWS EC2</li>
+										<li>AWS S3</li>
+										<li>AWS Security Best Practices</li>
+										<li>Automation Development</li>
+										<li>Azure Cloud Services</li>
+										<li>Azure Data Fundamentals</li>
+										<li>Azure Data Storage Solutions</li>
+										<li>Azure SQL Database</li>
+										<li>Bayesian Statistics</li>
+										<li>Big Data</li>
+										<li>Bootstrap</li>
+										<li>Business Operations Consulting</li>
+										<li>Celonis</li>
+										<li>Celonis Action Flows</li>
+										<li>Celonis EMS</li>
+										<li>Celonis Event Collection</li>
+										<li>Celonis Knowledge Models</li>
+										<li>Celonis Process Automation</li>
+										<li>C#</li>
+										<li>C++</li>
+										<li>Chatbot Development (Business Operations)</li>
+										<li>Classification Algorithms</li>
+										<li>Click-Level Task Mining</li>
+										<li>Client Stakeholder Collaboration</li>
+										<li>Cloud Computing</li>
+										<li>Cloud Fundamentals (AWS, Azure)</li>
+										<li>Computer Vision</li>
+										<li>Convolutional Neural Networks (CNNs)</li>
+										<li>CSS</li>
+										<li>CSS2</li>
+										<li>CSS3</li>
+										<li>Data Analysis</li>
+										<li>Data Cleaning</li>
+										<li>Data Engineering</li>
+										<li>Data Exploration</li>
+										<li>Data Integration (ERP Systems)</li>
+										<li>Data Mining</li>
+										<li>Data Modeling</li>
+										<li>Data Pipeline Engineering</li>
+										<li>Data Preprocessing</li>
+										<li>Data Science</li>
+										<li>Data Visualization</li>
+										<li>Data Warehousing</li>
+										<li>Deep Learning</li>
+										<li>Digital Twin Modeling</li>
+										<li>Docker</li>
+										<li>Elasticsearch</li>
+										<li>ERP Data Mapping</li>
+										<li>ERP Integration (SAP, Oracle, etc.)</li>
+										<li>ETL (Extract, Transform, Load)</li>
+										<li>Excel</li>
+										<li>Executive-Level Solution Demos</li>
+										<li>Feature Engineering</li>
+										<li>Generative AI Applications</li>
+										<li>Git</li>
+										<li>GitHub</li>
+										<li>Google Analytics</li>
+										<li>Google Cloud Platform (GCP)</li>
+										<li>GCP BigQuery</li>
+										<li>GCP Vertex AI</li>
+										<li>Hadoop</li>
+										<li>HTML</li>
+										<li>IBM Business Operations Innovation</li>
+										<li>Image Processing</li>
+										<li>Intelligent Automation</li>
+										<li>Java</li>
+										<li>JavaScript</li>
+										<li>Jira Automation Analysis</li>
+										<li>Jupyter Notebooks</li>
+										<li>Kubernetes</li>
+										<li>Linear Algebra</li>
+										<li>Linux</li>
+										<li>Machine Learning</li>
+										<li>Markov Chain</li>
+										<li>Markov Chain Monte Carlo (MCMC)</li>
+										<li>Matplotlib</li>
+										<li>Microsoft Azure</li>
+										<li>Microsoft Excel</li>
+										<li>Microsoft SQL Server</li>
+										<li>MongoDB</li>
+										<li>Monte Carlo Method</li>
+										<li>MySQL</li>
+										<li>Natural Language Processing (NLP)</li>
+										<li>Neural Networks</li>
+										<li>NumPy</li>
+										<li>Object-Centric Process Mining</li>
+										<li>OpenCV</li>
+										<li>Operational KPI Optimization</li>
+										<li>Operational Workflow Automation</li>
+										<li>Pandas</li>
+										<li>PHP</li>
+										<li>Process Automation (Celonis, UiPath)</li>
+										<li>Process Discovery</li>
+										<li>Process Improvement Strategy</li>
+										<li>Process Intelligence</li>
+										<li>Proof-of-Concept (PoC) Development</li>
+										<li>PyTorch</li>
+										<li>Python</li>
+										<li>R</li>
+										<li>Regression Analysis</li>
+										<li>RESTful APIs</li>
+										<li>Robotic Process Automation (RPA)</li>
+										<li>RPA Development (UiPath)</li>
+										<li>Scikit-learn</li>
+										<li>Shell Scripting</li>
+										<li>Snowflake</li>
+										<li>Spark</li>
+										<li>Source System Connection (ERP, CRM, SCM)</li>
+										<li>Springboot</li>
+										<li>SQL</li>
+										<li>Supervised Learning</li>
+										<li>Tariff Simulation Modeling</li>
+										<li>Task Mining</li>
+										<li>TensorFlow</li>
+										<li>Three-Way Match Analysis</li>
+										<li>Time Series Analysis</li>
+										<li>UiPath Orchestrator</li>
+										<li>UiPath Studio Development</li>
+										<li>Unix</li>
+										<li>Unsupervised Learning</li>
+										<li>VB.NET</li>
+										<li>Web Scraping</li>
+										<li>Woodworking</li>
+										<li>Workflow Automation (UiPath, Celonis)</li>
+										<li>YAML</li>
+										<li>Zendesk</li>
+								    </ul>
+
+									<script>
+									function search() {
+									    var input, filter, ul, li, a, i, txtValue;
+									    input = document.getElementById('searchInput');
+									    filter = input.value.toUpperCase();
+									    ul = document.getElementById("list");
+									    li = ul.getElementsByTagName('li');
+
+									    for (i = 0; i < li.length; i++) {
+									        txtValue = li[i].textContent || li[i].innerText;
+									        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+									            li[i].style.display = "";
+									        } else {
+									            li[i].style.display = "none";
+									        }
+									    }
+									}
+									</script>
+								</div>
+								<br>
+
+								<div class="row">
+									<div class="col-4 col-12-medium">
+										<h3>Technical Skills</h3>
+										<ul class="alt">
+											<li>Amazon Web Services (AWS)</li>
+											<li>AWS Cloud Architecture</li>
+											<li>AWS EC2</li>
+											<li>AWS S3</li>
+											<li>AWS Security Best Practices</li>
+											<li>Azure Cloud Services</li>
+											<li>Azure Data Fundamentals</li>
+											<li>Azure Data Storage Solutions</li>
+											<li>Azure SQL Database</li>
+											<li>Celonis EMS</li>
+											<li>Celonis Event Collection</li>
+											<li>Celonis Knowledge Models</li>
+											<li>Celonis Action Flows</li>
+											<li>Celonis Process Automation</li>
+											<li>Cloud Computing</li>
+											<li>Cloud Fundamentals (AWS, Azure)</li>
+											<li>Docker</li>
+											<li>Elasticsearch</li>
+											<li>ERP Integration (SAP, Oracle, etc.)</li>
+											<li>ETL (Extract, Transform, Load)</li>
+											<li>Git</li>
+											<li>GitHub</li>
+											<li>Google Cloud Platform (GCP)</li>
+											<li>GCP BigQuery</li>
+											<li>GCP Vertex AI</li>
+											<li>Hadoop</li>
+											<li>Kubernetes</li>
+											<li>Microsoft SQL Server</li>
+											<li>MongoDB</li>
+											<li>MySQL</li>
+											<li>Process Automation (Celonis, UiPath)</li>
+											<li>Python</li>
+											<li>RPA Development (UiPath)</li>
+											<li>SQL</li>
+											<li>Snowflake</li>
+											<li>Spark</li>
+											<li>UiPath Orchestrator</li>
+											<li>UiPath Studio Development</li>
+											<li>Unix/Linux</li>
+											<li>Web Scraping</li>
+											<li>Workflow Automation (UiPath, Celonis)</li>
+										</ul>
+									</div>
+									<div class="col-4 col-12-medium">
+										<h3>Consulting & Strategy</h3>
+										<ul class="alt">
+											<li>Business Process Consulting</li>
+											<li>Client Stakeholder Collaboration</li>
+											<li>Digital Transformation Advisory</li>
+											<li>Executive-Level Solution Demos</li>
+											<li>Operational Strategy Design</li>
+											<li>Process Discovery</li>
+											<li>Process Improvement Strategy</li>
+											<li>Process Intelligence</li>
+											<li>Proof-of-Concept (PoC) Development</li>
+											<li>Strategic Solution Building</li>
+											<li>Technical Advisory (Cloud, Data, Automation)</li>
+											<li>Workflow Optimization Consulting</li>
+										</ul>										
+										<h3>Operations & Supply Chain</h3>
+										<ul class="alt">
+											<li>Accounts Payable (AP) Process Mining</li>
+											<li>Accounts Receivable (AR) Process Mining</li>
+											<li>Click-Level Task Mining</li>
+											<li>ERP Data Mapping</li>
+											<li>Inventory Management Data Analysis</li>
+											<li>Logistics Data Integration</li>
+											<li>Operational KPI Optimization</li>
+											<li>Order-to-Cash (O2C) Process Mapping</li>
+											<li>Procure-to-Pay (P2P) Process Mapping</li>
+											<li>Supply Chain Analytics</li>
+											<li>Three-Way Match Analysis</li>
+											<li>Task Mining</li>
+											<li>Source System Connection (ERP, CRM, SCM)</li>
+											<li>Vendor Management Data Integration</li>
+										</ul>
+										<h3>Business Skills</h3>
+										<ul class="alt">
+											<li>Business Analysis</li>
+											<li>Business Intelligence (BI)</li>
+											<li>Data-Driven Decision Making</li>
+											<li>Financial Forecasting Models</li>
+											<li>Key Performance Indicator (KPI) Design</li>
+											<li>Management Reporting</li>
+											<li>Operations Reporting Automation</li>
+											<li>Process Standardization</li>
+											<li>ROI Analysis</li>
+											<li>Sales and Operations Planning (S&OP) Data Support</li>
+											<li>Strategic Planning Support</li>
+										</ul>
+									</div>
+									<div class="col-4 col-12-medium">
+										<h3>Data Science Concepts</h3>
+										<ul class="alt">
+											<li>Generative Artificial Intelligence Systems</li>
+											<li>Computer Vision</li>
+											<li>Data Mining</li>
+											<li>Data Structures</li>
+											<li>Deep Learning</li>
+											<li>Exploratory Data Analysis</li>
+											<li>Hyperparameter Tuning</li>
+											<li>Machine Learning</li>
+											<li>Neural Networks</li>
+											<li>Pattern Recognition</li>
+											<li>Process Mining</li>
+											<li>Supervised Learning</li>
+											<li>Unsupervised Learning</li>
+										</ul>
+										<h3>Data Science, AI, & Machine Learning</h3>
+										<ul class="alt">
+											<li>Algorithms</li>
+											<li>Bayesian Statistics</li>
+											<li>Big Data</li>
+											<li>Classification Algorithms</li>
+											<li>Computer Vision</li>
+											<li>Convolutional Neural Networks (CNNs)</li>
+											<li>Data Analysis</li>
+											<li>Data Cleaning</li>
+											<li>Data Exploration</li>
+											<li>Data Mining</li>
+											<li>Data Modeling</li>
+											<li>Data Preprocessing</li>
+											<li>Data Science</li>
+											<li>Data Visualization</li>
+											<li>Deep Learning</li>
+											<li>Feature Engineering</li>
+											<li>Generative AI Applications</li>
+											<li>Linear Algebra</li>
+											<li>Machine Learning</li>
+											<li>Markov Chain</li>
+											<li>Markov Chain Monte Carlo (MCMC)</li>
+											<li>Natural Language Processing (NLP)</li>
+											<li>Neural Networks</li>
+											<li>Regression Analysis</li>
+											<li>Supervised Learning</li>
+											<li>Time Series Analysis</li>
+											<li>Unsupervised Learning</li>
+										</ul>
+									</div>
+								</div>	
+							</section>
+
+							<!-- Progress Bars -->
 							<section>
 								<h3>Coding Languages</h3>
 							<!-- Python -->
@@ -99,215 +412,85 @@
 								<div class="progress-header">YAML</div>
 								<div style="margin-bottom: 2em;"><progress max="100" value="70"></progress></div>
 							</section>
-							
-						<!-- Text -->
+
 							<section>
-								<pre><code>Hello World! I have a plethera of experience in many different domains, see below.</code></pre>
-							</section>
-							
-						<!-- Lists -->
-							<section>
-								<h3>Search All Skills</h3>
-								<input type="text" id="searchInput" onkeyup="search()" placeholder="Click Here to Search for Skills...">
-
-								<div class="col-6 col-12-medium" style="max-height: 200px; overflow-y: auto;">
-								    <ul id="list" class="alt">
-								        <li>Algorithms</li>
-									    <li>Anaconda</li>
-									    <li>Amazon Web Services (AWS)</li>
-									    <li>AWS EC2</li>
-									    <li>AWS S3</li>
-									    <li>Bayesian Statistics</li>
-									    <li>Big Data</li>
-									    <li>Bootstrap</li>
-									    <li>Celonis</li>
-									    <li>C#</li>
-									    <li>C++</li>
-									    <li>CSS</li>
-									    <li>CSS2</li>
-									    <li>CSS3</li>
-									    <li>Classification Algorithms</li>
-									    <li>Cloud Computing</li>
-									    <li>Computer Vision</li>
-									    <li>Convolutional Neural Networks (CNNs)</li>
-									    <li>Data Analysis</li>
-									    <li>Data Cleaning</li>
-									    <li>Data Engineering</li>
-									    <li>Data Exploration</li>
-									    <li>Data Mining</li>
-									    <li>Data Modeling</li>
-									    <li>Data Preprocessing</li>
-									    <li>Data Science</li>
-									    <li>Data Visualization</li>
-									    <li>Data Warehousing</li>
-									    <li>Deep Learning</li>
-									    <li>Docker</li>
-									    <li>Elasticsearch</li>
-									    <li>Excel</li>
-									    <li>Feature Engineering</li>
-									    <li>Google Cloud Platform (GCP)</li>
-									    <li>GCP BigQuery</li>
-									    <li>GCP Vertex AI</li>
-									    <li>Git</li>
-									    <li>GitHub</li>
-									    <li>Google Analytics</li>
-									    <li>Hadoop</li>
-									    <li>HTML</li>
-									    <li>Image Processing</li>
-									    <li>Java</li>
-									    <li>JavaScript</li>
-									    <li>Jupyter Notebooks</li>
-									    <li>Kubernetes</li>
-									    <li>Linear Algebra</li>
-									    <li>Linux</li>
-									    <li>Machine Learning</li>
-									    <li>Markov Chain</li>
-									    <li>Markov Chain Monte Carlo (MCMC)</li>
-									    <li>Matplotlib</li>
-									    <li>Microsoft Azure</li>
-									    <li>Microsoft Excel</li>
-									    <li>Microsoft SQL Server</li>
-									    <li>MongoDB</li>
-									    <li>Monte Carlo Method</li>
-									    <li>MySQL</li>
-									    <li>Natural Language Processing (NLP)</li>
-									    <li>Neural Networks</li>
-									    <li>NumPy</li>
-									    <li>OpenCV</li>
-									    <li>Pandas</li>
-									    <li>PHP</li>
-									    <li>PyTorch</li>
-									    <li>Python</li>
-									    <li>R</li>
-									    <li>Regression Analysis</li>
-									    <li>RESTful APIs</li>
-									    <li>Scikit-learn</li>
-									    <li>Shell Scripting</li>
-									    <li>Snowflake</li>
-									    <li>Spark</li>
-									    <li>Springboot</li>
-									    <li>SQL</li>
-									    <li>Supervised Learning</li>
-									    <li>TensorFlow</li>
-									    <li>Time Series Analysis</li>
-									    <li>Unix</li>
-									    <li>Unsupervised Learning</li>
-									    <li>VB.NET</li>
-									    <li>Web Scraping</li>
-									    <li>Woodworking</li>
-									    <li>YAML</li>
-									    <li>Zendesk</li>
-								    </ul>
-
-									<script>
-									function search() {
-									    var input, filter, ul, li, a, i, txtValue;
-									    input = document.getElementById('searchInput');
-									    filter = input.value.toUpperCase();
-									    ul = document.getElementById("list");
-									    li = ul.getElementsByTagName('li');
-
-									    for (i = 0; i < li.length; i++) {
-									        txtValue = li[i].textContent || li[i].innerText;
-									        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-									            li[i].style.display = "";
-									        } else {
-									            li[i].style.display = "none";
-									        }
-									    }
-									}
-									</script>
-								</div>
-								<br>
-
 								<div class="row">
-									<div class="col-6 col-12-medium">
-										<h3>Data Science Concepts</h3>
-										<ul class="alt">
-										    <li>Generative Artificial Intelligence Systems</li>
-										    <li>Computer Vision</li>
-										    <li>Data Mining</li>
-										    <li>Data Structures</li>
-										    <li>Deep Learning</li>
-										    <li>Exploratory Data Analysis</li>
-										    <li>Hyperparameter Tuning</li>
-										    <li>Machine Learning</li>
-										    <li>Neural Networks</li>
-										    <li>Pattern Recognition</li>
-										    <li>Process Mining</li>
-										    <li>Supervised Learning</li>
-										    <li>Unsupervised Learning</li>
-										</ul>
-										<h3>R Libraries</h3>
-										<ul class="alt">
-										    <li>caret</li>
-										    <li>cvms</li>
-										    <li>dplyr</li>
-										    <li>e1071</li>
-										    <li>ggplot2</li>
-										    <li>Hmisc</li>
-										    <li>ISLR</li>
-										    <li>ISLR2</li>
-										    <li>magrittr</li>
-										    <li>MASS</li>
-										    <li>rethinking</li>
-										    <li>reshape</li>
-										    <li>reshape2</li>
-										    <li>sqldf</li>
-										    <li>stringr</li>
-										    <li>tibble</li>
-										    <li>tidyr</li>
-										    <li>tree</li>
-										</ul>
-									</div>
-									<div class="col-6 col-12-medium">
-										<h3>Python Libraries</h3>
-										<ul class="alt">
-										    <li>CatBoost</li>
-										    <li>Keras</li>
-										    <li>LightGBM</li>
-										    <li>Matplotlib</li>
-										    <li>NLTK</li>
-										    <li>NumPy</li>
-										    <li>PIL</li>
-										    <li>Pandas</li>
-										    <li>Plotly</li>
-										    <li>PyTorch</li>
-										    <li>SciPy</li>
-										    <li>Scikit-Learn</li>
-										    <li>Seaborn</li>
-										    <li>TensorFlow</li>
-										    <li>XGBoost</li>
-										    <li>catboost</li>
-										    <li>cv2</li>
-										    <li>datetime</li>
-										    <li>hyperopt</li>
-										    <li>imblearn</li>
-										    <li>itertools</li>
-										    <li>keras_tuner</li>
-										    <li>lightgbm</li>
-										    <li>numpy</li>
-										    <li>os</li>
-										    <li>plotly</li>
-										    <li>random</li>
-										    <li>rpca</li>
-										    <li>shap</li>
-										    <li>tensorflow</li>
-										</ul>
+									<div class="col-4 col-12-medium">
 										<h3>Developer Tools</h3>
 										<ul class="alt">
 											<li>.NET Core</li>
-										    <li>.NET Framework</li>
-										    <li>AWS</li>
-										    <li>Celonis</li>
-										    <li>FileZilla</li>
-										    <li>GitHub</li>
-										    <li>UiPath</li>
-										    <li>WinSCP</li>
+											<li>.NET Framework</li>
+											<li>AWS</li>
+											<li>Azure</li>
+											<li>Celonis</li>
+											<li>FileZilla</li>
+											<li>GitHub</li>
+											<li>Google Cloud</li>
+											<li>UiPath</li>
+											<li>WinSCP</li>
 										</ul>
 									</div>
-								</div>
+									<div class="col-4 col-12-medium">
+										<h3>Python Libraries</h3>
+										<ul class="alt">
+											<li>CatBoost</li>
+											<li>Keras</li>
+											<li>LightGBM</li>
+											<li>Matplotlib</li>
+											<li>NLTK</li>
+											<li>NumPy</li>
+											<li>PIL</li>
+											<li>Pandas</li>
+											<li>Plotly</li>
+											<li>PyTorch</li>
+											<li>SciPy</li>
+											<li>Scikit-Learn</li>
+											<li>Seaborn</li>
+											<li>TensorFlow</li>
+											<li>XGBoost</li>
+											<li>catboost</li>
+											<li>cv2</li>
+											<li>datetime</li>
+											<li>hyperopt</li>
+											<li>imblearn</li>
+											<li>itertools</li>
+											<li>keras_tuner</li>
+											<li>lightgbm</li>
+											<li>numpy</li>
+											<li>os</li>
+											<li>plotly</li>
+											<li>random</li>
+											<li>rpca</li>
+											<li>shap</li>
+											<li>tensorflow</li>
+										</ul>
+									</div>
+									<div class="col-4 col-12-medium">
+										<h3>R Libraries</h3>
+										<ul class="alt">
+											<li>caret</li>
+											<li>cvms</li>
+											<li>dplyr</li>
+											<li>e1071</li>
+											<li>ggplot2</li>
+											<li>Hmisc</li>
+											<li>ISLR</li>
+											<li>ISLR2</li>
+											<li>magrittr</li>
+											<li>MASS</li>
+											<li>rethinking</li>
+											<li>reshape</li>
+											<li>reshape2</li>
+											<li>sqldf</li>
+											<li>stringr</li>
+											<li>tibble</li>
+											<li>tidyr</li>
+											<li>tree</li>
+										</ul>
+									</div>
+								</div>						
 							</section>
+							
 						</div>
 					</div>
 			<!-- Footer -->
@@ -342,7 +525,7 @@
 							</ul>
 						</section>
 						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Nickolaus White. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 				</footer>

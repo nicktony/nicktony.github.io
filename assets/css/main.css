@@ -37,6 +37,41 @@ ol, ul {
 	list-style: none;
 }
 
+blockquote.quotes {
+	position: relative;
+	height: 2.5em; /* adjust based on text size */
+	overflow: hidden;
+  }
+  
+  blockquote.quotes span {
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	animation: fadeQuotes 18s infinite;
+  }
+  
+  blockquote.quotes span:nth-child(1) {
+	animation-delay: 0s;
+  }
+  blockquote.quotes span:nth-child(2) {
+	animation-delay: 6s;
+  }
+  blockquote.quotes span:nth-child(3) {
+	animation-delay: 12s;
+  }
+  blockquote.quotes span:nth-child(4) {
+	animation-delay: 18s;
+  }
+  
+  @keyframes fadeQuotes {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	30% { opacity: 1; }
+	40% { opacity: 0; }
+	100% { opacity: 0; }
+  }
+  
+/* Keeping your original CSS too */
 blockquote, q {
 	quotes: none;
 }
@@ -2707,11 +2742,11 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #8fb2eb;
+				background-color: #7ecaf6;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #f1ad60;
 			}
 
 			.tiles article.style3 > .image:before {
@@ -2727,7 +2762,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #fad02c;
+				background-color: #8fb2eb;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
