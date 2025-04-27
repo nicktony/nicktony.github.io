@@ -95,9 +95,9 @@
 										    <li>UiPath Certified RPA Associate v1.0 (UiRPA) (Aug 22')</li>
 										</ul>
 									</div>
-									<div class="col-6 col-12-medium">
+									<div class="col-6 col-12-medium" style="max-height: 800px; overflow-y: auto;">
 										<h3>Courses</h3>
-										<ul class="alt">
+										<ul id="list" class="alt">
 											<li>Advanced C#.NET Programming</li>
 											<li>Algorithms and Computing w/C++</li>
 											<li>Applied Linear Algebra</li>
@@ -130,6 +130,25 @@
 											<li>Software Engineering</li>
 											<li>Spec Topics: Adv in Biometrics</li>
 										</ul>
+	
+										<script>
+										function search() {
+											var input, filter, ul, li, a, i, txtValue;
+											input = document.getElementById('searchInput');
+											filter = input.value.toUpperCase();
+											ul = document.getElementById("list");
+											li = ul.getElementsByTagName('li');
+	
+											for (i = 0; i < li.length; i++) {
+												txtValue = li[i].textContent || li[i].innerText;
+												if (txtValue.toUpperCase().indexOf(filter) > -1) {
+													li[i].style.display = "";
+												} else {
+													li[i].style.display = "none";
+												}
+											}
+										}
+										</script>
 									</div>
 								</div>
 							</section>
