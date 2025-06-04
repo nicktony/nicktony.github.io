@@ -47,17 +47,17 @@ blockquote.quotes {
 	position: absolute;
 	width: 100%;
 	opacity: 0;
-	animation: fadeQuotes 36s infinite;
+	animation: fadeQuotes 45s infinite;
   }
   
   blockquote.quotes span:nth-child(1) {
 	animation-delay: 0s;
   }
   blockquote.quotes span:nth-child(2) {
-	animation-delay: 12s;
+	animation-delay: 15s;
   }
   blockquote.quotes span:nth-child(3) {
-	animation-delay: 24s;
+	animation-delay: 30s;
   }
   
   @keyframes fadeQuotes {
